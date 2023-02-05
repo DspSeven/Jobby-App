@@ -1,4 +1,5 @@
 import Cookies from 'js-cookie'
+import {Link} from 'react-router-dom'
 import './home.css'
 
 const Home = props => {
@@ -33,7 +34,9 @@ const Home = props => {
           Millions of people are searching for jobs, salary information, company
           reviews. Find the jobs that fits your abilities and potential
         </p>
-        <button type="button">Find Jobs</button>
+        <Link to="/job">
+          <button type="button">Find Jobs</button>
+        </Link>
       </div>
     </div>
   )

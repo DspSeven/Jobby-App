@@ -2,9 +2,10 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Home from './components/Home/home'
 import Login from './components/Login/login'
 import ProtectedRoute from './components/ProtectedRoute/index'
+import Job from './components/Job/job'
 import './App.css'
 
-// These are the lists used in the application. You can move them to any component needed.
+/* These are the lists used in the application. You can move them to any component needed.
 const employmentTypesList = [
   {
     label: 'Full Time',
@@ -42,6 +43,7 @@ const salaryRangesList = [
     label: '40 LPA and above',
   },
 ]
+*/
 
 // Replace your code here
 const App = () => (
@@ -49,6 +51,7 @@ const App = () => (
     <Switch>
       <Route exact path="/login" component={Login} />
       <ProtectedRoute exact path="/" component={Home} />
+      <ProtectedRoute exact path="/job" component={Job} />
     </Switch>
   </BrowserRouter>
 )
